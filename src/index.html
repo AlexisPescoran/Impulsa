@@ -14,6 +14,25 @@
 </head>
 
 <body>
+
+    <!-- bloque decódigo de conexión con firebase -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.2/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyC-dAOe6i50pJMxXpq_rLN-5NnJ8x1r97Q",
+        authDomain: "impulsa-a1be6.firebaseapp.com",
+        databaseURL: "https://impulsa-a1be6.firebaseio.com",
+        projectId: "impulsa-a1be6",
+        storageBucket: "impulsa-a1be6.appspot.com",
+        messagingSenderId: "110450159851"
+    };
+    firebase.initializeApp(config);
+    </script>
+
+    <!-- <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script> -->
+    <!--fin-->
+
   <header>
     <nav class="navbar navbar-expand-lg morado">
       <a class="navbar-brand naranja" href="#">Impulsate</a>
@@ -52,7 +71,7 @@
         
       </div>
       <button type="button" class="btn btn-dark" data-toggle="button" aria-pressed="false" autocomplete="off">
-          <a href="">Registrate</a>
+          <a href="" id = "acceder">Acceder</a>
       </button>
     </nav>
   </header>
